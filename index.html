@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajan Sarki</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon-1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">@ItzRaZon</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <!--<li><a href="#blog">Blog</a></li>
+        <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#contact">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">@ItzRaZon</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <!--<li><a href="#blog" onclick="toggleMenu()">Blog</a></li>-->>
+          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          style="border-radius: 100%"
+          src="assets/profile-img.jpg"
+          alt="Rajan-sarki-profile-picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ra Zon.</h1>
+        <p class="section__text__p2">
+          M.B.B.S. Student 
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div class="socials-container">
+          <!--<img
+            src="assets/linkedin.png"
+            alt="Rajan-sarki-linked-in-profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/Rajan-sarki', '_blank')"
+          />
+        -->
+          <img src="assets/github.png" alt="Rajan-sarki-github-profile"
+            class="icon" onclick="location.href='https://github.com/RaZon-med'"> 
+
+          <img
+            src="assets/github.png"
+            alt="Rajan-sarki-github-profile"
+            class="icon"
+            onclick="window.open('https://github.com/RaZon-med', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/doctor.png"
+            alt="Rajan-Profile-picture-2"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="assets/excellence.png"
+                class="icon"
+                alt="experience-icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                1+ Year <br />
+                Basic Medicine 
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="assets/education.png"
+                class="icon"
+                alt="education-icon"
+              />
+              <h3>Education</h3>
+              <p>Medicinae Baccalaureus Baccalaureus Chirurgiae.</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Hi! I am an enthusiastic <strong>Medical Student</strong> and
+              <strong>Sportsperson </strong>.
+              Currently, I am a second-year student of
+              <strong
+                >Bachelor of Medicine and Bachelor of Surgery
+                Engineering (MBBS)</strong
+              >. 
+              I have always been interested in Sports like <strong>Football</strong>,<strong>Cricket, Running</strong>.<br/>
+              <em>I believe in life-long learning.</em>
+            </p>
+          </div>
+        </div>
+    </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img
+                class="contact-email-icon"
+                src="assets/email.png"
+                alt="email-icon"
+                class="icon contact-icon"
+            />
+            <p>
+                <a href="mailto:rkpsec.21@gmail.com">rkpsec.21@gmail.com</a>
+            </p>
+        </div>
+        <div class="contact-info-container">
+            <a href="https://wa.me/9866241286" target="_blank">
+                <img
+                    src="assets/whatsapp.png"
+                    alt="whatsapp-icon"
+                    class="icon contact-icon"
+                />
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Rajan Sarki. All Rights Reserved.</p>
+    </footer>
+  <!--<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"91054a104886fdb4","version":"2025.1.0","r":1,"token":"d7d2ce636b9045e984b798bcc2d23b83","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}}}' crossorigin="anonymous"></script>-->
+  <script src="script.js"></script>
+</body>
+</html>
